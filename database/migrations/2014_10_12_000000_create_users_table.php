@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('city');
             $table->string('phone')->unique();
             $table->string('email')->unique();
+            $table->boolean('is_restaurant_owner')->default(0);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
