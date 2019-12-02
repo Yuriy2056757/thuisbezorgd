@@ -39,7 +39,7 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
-        //
+        $this->mapAdminRoutes();
     }
 
     /**
@@ -68,7 +68,7 @@ class RouteServiceProvider extends ServiceProvider
         Route::middleware('admin')
             ->prefix('admin')
             ->namespace($this->namespace . '\Admin')
-            ->group(base_path('routes/web.php'));
+            ->group(base_path('routes/admin.php'));
     }
 
     /**
