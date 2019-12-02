@@ -22,7 +22,7 @@ class CreateRestaurantsTable extends Migration
             $table->string('city');
             $table->string('phone');
             $table->string('email');
-            $table->string('image');
+            $table->string('image')->default(0);
             $table->unsignedBigInteger('user_id');
             $table->timestamps();
 

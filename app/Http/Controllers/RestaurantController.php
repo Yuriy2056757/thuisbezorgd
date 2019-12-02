@@ -28,6 +28,7 @@ class RestaurantController extends Controller
             'city' => 'required',
             'phone' => 'required',
             'email' => 'required',
+            'image' => 'sometimes',
         ]);
     }
 
